@@ -13,7 +13,7 @@ let package = Package(
     targets: [
         .target(
           name: "ProxyLogHandler",
-          dependencies: [ "Logging" ]
+          .product(name: "Logging", package: "swift-log"),
         )
     ]
 )
